@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <!--Una buena practica es en la referencia no usar el https , pues asi evito la incompatibilidad con el servidor
+en caso que solo acepte http -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta = "UTF-8">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+      <!-- Aquí tu solución -->
+
+        <h1>Registro</h1>
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+              <div class="form-group">
+               <label for="pwd">Contraseña</label>
+               <input type="password" class="form-control" id="contraseña" placeholder="Enter password" name="contraseña">
+              </div>
+                <div class="form-group">
+                  <label for="pwd">Confirmar Contraseña</label>
+                  <input type="password" class="form-control" id="confirm_contraseña" placeholder="Enter password" name="confirm_contraseña">
+                </div>
+                  <div class="form-group">
+                    <label for="sel1">Pais</label>
+                    <select class="form-control" id="sel1">
+                      <option>Mexico</option>
+                      <option>Canada</option>
+                      <option>Colombia</option>
+                      <option>Venezuela</option>
+                   </select>
+                  </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox"> Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Registrarme</button>
+          </form>
+      </div>
+     </div>
+    </div>
+</body>
